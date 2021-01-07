@@ -16,21 +16,19 @@ function pugB() {
        pretty: false
     }))
     .pipe(gulp.dest(distDir))
-    .pipe(livereload());
 }
 
 function sassB() {
-    return gulp.src(srcDir + '/scss/*.scss')
+    return gulp.src(srcDir + 'scss/*.scss')
       .pipe(sass({outputStyle: 'compressed'}))
       .pipe(gulp.dest(distDir))
-      .pipe(livereload());
 }
 
 var watch = gulp.series( pugB, sassB, function(){
-    livereload.listen();
 	gulp.watch(srcDir + "pug/*.pug", pugB);
-	gulp.watch(srcDir + '/scss/*.scss', sassB);
+	gulp.watch(srcDir + 'scss/*.scss', sassB);
 	console.log('Watcher started');
 });
 
+gulp.task('sassB', sassB);
 gulp.task('watch', watch);

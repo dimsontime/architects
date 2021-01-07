@@ -1,43 +1,58 @@
 extends views/layout.pug
 
 block content
-    div(class="container")
-        div(class="first-screen")
-            div.slide1.mainpage-slide
-                div.line1.line
-                    h1(class="minpage-slide-title") Смена
-                    img(src="../media/case2.png")
-                    h4(class="minpage-slide-text-big") За нас говорят объекты
+    .container
+        .first-screen
+            .slide1.mainpage-slide
+                .line1.line
+                    div
+                        h1(class="minpage-slide-title") Смена
+                    div
+                        .backgrounded-img.slide1-img1(style='background-image:url(../media/case2.png')
+                    div
+                        h4(class="minpage-slide-text-big") За нас говорят объекты
                 
-                div.line2.line
-                    h1(class="minpage-slide-title") Парадигмы
+                .line2.line
+                    div
+                        h1(class="minpage-slide-title") Парадигмы
 
-                div.line3.line
-                    p.minpage-slide-text-small Если вы еще не знаете, какой нужен бюджет для проекта, то просто закажите эксперта
-                    h1(class="minpage-slide-title-smooth") в дизайне
+                .line3.line
+                    div
+                        p.minpage-slide-text-small Если вы еще не знаете, какой нужен бюджет для проекта, то просто закажите эксперта
+                    div
+                        h1(class="minpage-slide-title-smooth") в дизайне
 
-                div.line4.line
-                    div.text   
-                        h5.minpage-slide-text-big Мы — архитектурное бюро в&nbsp;новосибирске
-                        h6.minpage-slide-text-small , деятельность которого направлена на качественное улучшение городской среды. Мы восстанавливаем, формируем и воспитываем культуру проектирования. 
+                .line4.line
+                    .text
+                        div   
+                            h5.minpage-slide-text-big Мы — архитектурное бюро в&nbsp;новосибирске
+                        div
+                            h6.minpage-slide-text-medium , деятельность которого направлена на качественное улучшение городской среды. Мы восстанавливаем, формируем и воспитываем культуру проектирования. 
 
-                div.last-case
+                .last-case
                     a(href="somewhere") 
-                        p Последний кейс бюро
-                        img(src="../media/case3.png")
+                        div
+                            p Последний кейс бюро
+                        div
+                            .backgrounded-img.slide1-img2(style='background-image:url(../media/case3.png')
             
-            div.slide2.mainpage-slide
-                div.line1.line
-                    p(class="minpage-slide-text-small") Проектная организация «Формат Проект» основана в Новосибирске в 2010 году. Мы оказываем комплекс услуг по разработке проектной документации в сфере гражданского и промышленного строительства.
-                    p(class="minpage-slide-text-small") Проектируем жилые дома и общественные здания, производственные сооружения и предприятия, многофункциональные комплексы.
-                    p(class="minpage-slide-text-small") За время работы мы выполнили более 500 проектов. Среди наших партнеров: ИКЕА, ТЦ «Аура», Ertle Stroy, Альфа Ритейл Компани, ГК «Конквест», санаторий «Родник Алтая», медицинская компания «Инвитро».
+            .slide2.mainpage-slide
+                .line1.line
+                    div
+                        p(class="minpage-slide-text-small") Проектная организация «Формат Проект» основана в Новосибирске в 2010 году. Мы оказываем комплекс услуг по разработке проектной документации в сфере гражданского и промышленного строительства.
+                    div
+                        p(class="minpage-slide-text-small") Проектируем жилые дома и общественные здания, производственные сооружения и предприятия, многофункциональные комплексы.
+                    div
+                        p(class="minpage-slide-text-small") За время работы мы выполнили более 500 проектов. Среди наших партнеров: ИКЕА, ТЦ «Аура», Ertle Stroy, Альфа Ритейл Компани, ГК «Конквест», санаторий «Родник Алтая», медицинская компания «Инвитро».
                 
-                div.line2.line
-                    h1(class="minpage-slide-title") продуманность
+                .line2.line
+                    div
+                        h1(class="minpage-slide-title") продуманность
 
-                div.line3.line
-                    h1(class="minpage-slide-title") решений
+                .line3.line
+                    div 
+                        h1(class="minpage-slide-title") решений
 
-                div.slide2-img
-                    img(src="../media/slide2.png")
-
+                .slide2-img
+                    div
+                        .backgrounded-img.slide2-img1(style='background-image:url(../media/case3.png')
